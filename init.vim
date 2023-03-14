@@ -18,15 +18,15 @@ set shiftwidth=4            " width for autoindents
 set autoindent              " indent a new line the same amount as the line just typed
 set number                  " add line numbers
 set wildmode=longest,list   " get bash-like tab completions
-set cc=80                  " set an 80 column border for good coding style
-filetype plugin indent on   "allow auto-indenting depending on file type
+set cc=80                   " set an 80 column border for good coding style
+filetype plugin indent on   " allow auto-indenting depending on file type
 syntax on                   " syntax highlighting
 set mouse=a                 " enable mouse click
 set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
-set encoding=UTF-8
+set encoding=UTF-8          " Set to use UTF-8 to display emoji characters (used as icons)
 
 
 
@@ -36,12 +36,12 @@ call plug#begin(stdpath('data') . '/plugged')
  " Plugin Section
  Plug 'dracula/vim'
  Plug 'ryanoasis/vim-devicons'
-" Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
+ " Plug 'SirVer/ultisnips'
+ " Plug 'honza/vim-snippets'
  Plug 'scrooloose/nerdtree'
  Plug 'preservim/nerdcommenter'
-" Plug 'mhinz/vim-startify'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'} " I think this is only for NodeJS
+ " Plug 'mhinz/vim-startify'
+ " Plug 'neoclide/coc.nvim', {'branch': 'release'} " I think this is only for NodeJS
  Plug 'vim-airline/vim-airline'
  Plug 'vim-airline/vim-airline-themes'
 call plug#end()
@@ -59,21 +59,6 @@ set guifont=FiraCode\ NFM:h11
 
 
 
-"==============================================================================
-"                        Language Specific Options
-"==============================================================================
-
-"==============================================================================
-"                                  Python
-"==============================================================================
-let g:loaded_python3_provider = 0 " Disable Python. This is only temporary until I can fix the issue on Windows.
-
-
-
-
-
-
-
 
 
 "==============================================================================
@@ -83,7 +68,7 @@ let g:loaded_python3_provider = 0 " Disable Python. This is only temporary until
 "==============================================================================
 " NERDTree
 "==============================================================================
-autocmd VimEnter * NERDTree
+"autocmd VimEnter * NERDTree
 
 "==============================================================================
 " Airline
