@@ -9,7 +9,7 @@ My Neovim configuration
 5. Run :PlugInstall once Neovim is open.
 
 ### Windows
-Use the "C:\Users\sgalland\AppData\Local\nvim" directory.
+Use the "C:\Users\<username>\AppData\Local\nvim" directory.
 
 ### Linux
 Use the  "~/.config/nvim" directory.
